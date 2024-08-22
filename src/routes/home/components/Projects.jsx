@@ -42,7 +42,7 @@ const Project = ({
         <h1 className="text-xl font-medium">{title}</h1>
         <p className="text-base text-gray-500 lg:w-10/12">{description}</p>
 
-        <div className="flex items-center gap-3 mb-3">
+        <div className="flex flex-wrap items-center gap-3 mb-3">
           {otherTools.map((tool) => (
             <p
               key={tool}
