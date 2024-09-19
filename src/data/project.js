@@ -2,6 +2,7 @@ import exclusive from "../../public/assets/projimages/exclusive.png";
 import taskbud from "../../public/assets/projimages/taskbud.png";
 import usersDashboard from "../../public/assets/projimages/usersdashboard.png";
 import portfolio from "../../public/assets/projimages/portfolio.png";
+import farmlink from "../../public/assets/projimages/farmlink.png";
 export const projects = [
   {
     id: 1,
@@ -62,5 +63,19 @@ export const projects = [
     displayImage: taskbud,
     description:
       "Taskbud is a web app that allows you to seamlessly track tasks without the process being boring.",
+  },
+
+  {
+    id: 5,
+    title: "Farmlink",
+    githubLink: "https://github.com/kodecampteam/farmlink-fe",
+    siteLink: "https://farmlink-fe-int.vercel.app/",
+    languages: ["JavaScript"],
+    frameworks: ["React"],
+    otherTools: ["tailwind"],
+    inProgress: false,
+    displayImage: farmlink,
+    description:
+      "Farmlink is a platform that allows farmers sell their farm produce directly to consumers. Here I worked in collaboration with UI designers, backend developers and frontend developers. ",
   },
 ];
