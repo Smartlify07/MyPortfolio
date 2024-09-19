@@ -27,8 +27,8 @@ export const projects = [
       "My portfolio website where I showcase all my work and other things about me",
     languages: ["Javascript"],
 
-    githubLink: "https://github.com/Smartlify07/Usersdashboard",
-    siteLink: "https://usersdashboard.vercel.app/",
+    githubLink: "https://github.com/Smartlify07/MyPortfolio",
+    siteLink: "https://obinna-anosike.vercel.app/",
 
     frameworks: ["React"],
     otherTools: ["tailwind"],
