@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import { projects } from "../../../data/project";
 import { FaGithub, FaRegEye } from "react-icons/fa";
+import PropType from "prop-types";
+import { motion } from "framer-motion";
 const Projects = () => {
   return (
-    <section className="py-20 min-h-screen  flex flex-col items-center w-10/12">
+    <section
+      id="#projects"
+      className="py-20 min-h-screen  flex flex-col items-center w-10/12"
+    >
       <h1 className="text-lg font-normal mb-8 self-start uppercase ">
         Projects
       </h1>
@@ -20,7 +25,7 @@ const Projects = () => {
 const Project = ({
   title,
   description,
-  languages,
+  // languages,
   frameworks,
   inProgress,
   otherTools,
@@ -30,10 +35,13 @@ const Project = ({
 }) => {
   return (
     <div className="flex flex-col justify-around gap-10 py-6 border w-full items-center lg:flex-row">
-      <div className="w-full lg:w-6/12  rounded-md ">
-        <img
+      <div className="w-full lg:w-6/12 overflow-hidden  rounded-md ">
+        <motion.img
+          initial={{ filter: "brightness(50%)", scale: 1 }}
+          whileHover={{ scale: 1.05, filter: "brightness(100%)" }}
+          transition={{ duration: 1 }}
           src={displayImage}
-          className="w-full transition-all hover:scale-105"
+          className="w-full  "
           alt=""
         />
       </div>
@@ -76,6 +84,18 @@ const Project = ({
       </div>
     </div>
   );
+};
+
+Project.propTypes = {
+  description: PropType.string,
+  title: PropType.string,
+  languages: PropType.array,
+  frameworks: PropType.array,
+  inProgress: PropType.bool,
+  otherTools: PropType.object,
+  displayImage: PropType.string,
+  githubLink: PropType.string,
+  siteLink: PropType.string,
 };
 
 export default Projects;

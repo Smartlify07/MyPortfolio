@@ -20,7 +20,11 @@ const About = () => {
         web.
       </p>
 
-      <a className="bg-[#080808] text-center rounded-md py-4 px-3 w-[200px] self-start text-[#fdfdfd] font-medium">
+      <a
+        href="mailto:anosikeobinna895@gmail.com"
+        target="_blank"
+        className="bg-[#080808] cursor-pointer text-center rounded-md py-4 px-3 w-[200px] self-start text-[#fdfdfd] font-medium"
+      >
         Let&apos;s talk!
       </a>
     </section>

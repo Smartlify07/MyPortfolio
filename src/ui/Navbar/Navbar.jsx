@@ -1,5 +1,4 @@
 import NavLinks from "./nav-links";
-
 const Navbar = () => {
   return (
     <nav className="py-6 flex font-raleway items-center justify-center">
